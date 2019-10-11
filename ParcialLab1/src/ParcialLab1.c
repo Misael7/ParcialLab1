@@ -14,6 +14,7 @@
 #include "handyFunctions.h"
 #include "strCliente.h"
 #include "strPedidos.h"
+#include "strTrash.h"
 #define LENGTH 100
 #define LENGTH2 1000
 
@@ -21,6 +22,7 @@ int main(void)
 {
 	Client clientE[LENGTH];
 	Request requestE[LENGTH2];
+	Trash basurA[LENGTH2];
 	int menuOptions;
 	int flagAdd=0;
 	int searchNum;
@@ -65,15 +67,23 @@ int main(void)
 					}
 					FLUSH;
 					break;
+			//-------------------------------------------------------------------------//
 			case(4):
 					if(flagAdd==1)
 					{
 						pedidoRecoleccion(clientE,requestE,LENGTH,LENGTH2);
-						/*printClient(clientE,LENGTH);
-
-						addRequest(requestE,LENGTH2);
-
-						printRequest(requestE,LENGTH2);*/
+					}
+					else
+					{
+						printf("\n Debe cargar un cliente antes\n");
+					}
+					FLUSH;
+					break;
+			//-------------------------------------------------------------------------//
+			case(5):
+					if(flagAdd==1)
+					{
+						procesarResiduos(clientE,requestE,basurA,LENGTH,LENGTH2);
 					}
 					else
 					{

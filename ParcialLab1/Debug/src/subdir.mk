@@ -8,21 +8,24 @@ C_SRCS += \
 ../src/RequestABM.c \
 ../src/clientABM.c \
 ../src/handyFunctions.c \
-../src/pedidoDeRecoleccion.c 
+../src/pedidoDeRecoleccion.c \
+../src/procesarResiduos.c 
 
 OBJS += \
 ./src/ParcialLab1.o \
 ./src/RequestABM.o \
 ./src/clientABM.o \
 ./src/handyFunctions.o \
-./src/pedidoDeRecoleccion.o 
+./src/pedidoDeRecoleccion.o \
+./src/procesarResiduos.o 
 
 C_DEPS += \
 ./src/ParcialLab1.d \
 ./src/RequestABM.d \
 ./src/clientABM.d \
 ./src/handyFunctions.d \
-./src/pedidoDeRecoleccion.d 
+./src/pedidoDeRecoleccion.d \
+./src/procesarResiduos.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
