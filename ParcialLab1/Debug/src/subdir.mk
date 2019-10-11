@@ -8,6 +8,7 @@ C_SRCS += \
 ../src/RequestABM.c \
 ../src/clientABM.c \
 ../src/handyFunctions.c \
+../src/imprimirClientesPendientesProcesados.c \
 ../src/pedidoDeRecoleccion.c \
 ../src/procesarResiduos.c 
 
@@ -16,6 +17,7 @@ OBJS += \
 ./src/RequestABM.o \
 ./src/clientABM.o \
 ./src/handyFunctions.o \
+./src/imprimirClientesPendientesProcesados.o \
 ./src/pedidoDeRecoleccion.o \
 ./src/procesarResiduos.o 
 
@@ -24,6 +26,7 @@ C_DEPS += \
 ./src/RequestABM.d \
 ./src/clientABM.d \
 ./src/handyFunctions.d \
+./src/imprimirClientesPendientesProcesados.d \
 ./src/pedidoDeRecoleccion.d \
 ./src/procesarResiduos.d 
 
