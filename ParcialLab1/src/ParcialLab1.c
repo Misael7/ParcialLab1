@@ -31,7 +31,7 @@ int main(void)
 	////whilestart
 	do
 	{
-		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n8)Mostrar Clientes\n9)Salir ");
+		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n5)Procesar residuos\n8)Mostrar Clientes\n9)Salir ");
 		FLUSH;
 		scanf("%d",&menuOptions);
 		switch(menuOptions)
