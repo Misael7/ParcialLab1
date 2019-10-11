@@ -13,19 +13,23 @@
 #include <stdio_ext.h>
 #include "handyFunctions.h"
 #include "strCliente.h"
-#define LENGTH 20
+#include "strPedidos.h"
+#define LENGTH 100
+#define LENGTH2 1000
 
 int main(void)
 {
 	Client clientE[LENGTH];
+	Request requestE[LENGTH2];
 	int menuOptions;
 	int flagAdd=0;
 	int searchNum;
 	startClient(clientE,LENGTH);
+	startRequest(requestE,LENGTH2);
 	////whilestart
 	do
 	{
-		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n9)Salir ");
+		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n8)Mostrar Clientes\n9)Salir ");
 		FLUSH;
 		scanf("%d",&menuOptions);
 		switch(menuOptions)
@@ -57,7 +61,23 @@ int main(void)
 					}
 					else
 					{
-						printf("\n Debe cargar un empleado antes de darlo de baja\n");
+						printf("\n Debe cargar un cliente antes\n");
+					}
+					FLUSH;
+					break;
+			case(4):
+					if(flagAdd==1)
+					{
+						pedidoRecoleccion(clientE,requestE,LENGTH,LENGTH2);
+						/*printClient(clientE,LENGTH);
+
+						addRequest(requestE,LENGTH2);
+
+						printRequest(requestE,LENGTH2);*/
+					}
+					else
+					{
+						printf("\n Debe cargar un cliente antes\n");
 					}
 					FLUSH;
 					break;

@@ -54,7 +54,7 @@ int printClient(Client clientE[], int length)
 	{
 		if(clientE[i].isEmpty==0)
 		{
-			printf("Empresa: %s \n",clientE[i].clientName);
+			printf("\nEmpresa: %s \n",clientE[i].clientName);
 			printf("Localidad: %s \n",clientE[i].clientLoc);
 			printf("direccion: %s \n", clientE[i].clientDir);
 			printf("cuit: %d \n", clientE[i].clientCuit);
