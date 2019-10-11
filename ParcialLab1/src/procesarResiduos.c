@@ -14,11 +14,11 @@ int procesarResiduos(Client clientE[],Request requestE[],Trash basurA[], int len
 	getInt(&selectedID);
 	printearPedidoSeleccionado(requestE,selectedID);
 	printf("\nDetermine peso de hdpe\n");
-	getInt(basurA[selectedID].hdpe);
+	getInt(&basurA[selectedID].hdpe);
 	printf("\nDetermine peso de ldpe\n");
-	getInt(basurA[selectedID].ldpe);
+	getInt(&basurA[selectedID].ldpe);
 	printf("\nDetermine peso de pp\n");
-	getInt(basurA[selectedID].pp);
+	getInt(&basurA[selectedID].pp);
 	basurA[selectedID].isEmpty=0;
 	printf("\nEstado de pedido completo\n");
 	requestE[selectedID].requestStatus=1;
