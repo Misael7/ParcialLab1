@@ -12,9 +12,13 @@ int imprimirClientesPendiente(Client clientE[],Request requestE[],Trash basurA[]
 
 	for(int i = 0; i<length ; i++ )
 	{
-		if (requestE[i].requestStatus==0 && clientE[i].isEmpty==0)
+		if (requestE[i].requestStatus==0 && requestE[i].isEmpty==0)
 		{
-			printearClienteSeleccionado(clientE,i);
+			if(clientE[i].isEmpty==0)
+			{
+				printearClienteSeleccionado(clientE,i);
+
+			}
 			printearPedidoSeleccionado(requestE,i);
 		}
 
