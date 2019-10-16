@@ -32,3 +32,11 @@ int printearPedidoSeleccionado(Request requestE[], int length)
 	printf("Peso: %d \n", requestE[length].totalWeight);
 	return 0;
 }
+
+int printearBasuraSeleccionada(Trash basurA[], int length)
+{
+	printf("HDPE: %d \n", basurA[length].hdpe);
+	printf("LDPE: %d \n", basurA[length].ldpe);
+	printf("LDPE: %d \n", basurA[length].pp);
+	return 0;
+}

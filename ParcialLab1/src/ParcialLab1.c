@@ -31,7 +31,7 @@ int main(void)
 	////whilestart
 	do
 	{
-		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n5)Procesar residuos\n6)Print clientes pendientes\n8)Mostrar Clientes\n9)Salir ");
+		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n5)Procesar residuos\n6)Print clientes y pedidos pendientes\n7)Mostrar pedidos procesados\n8)Mostrar Clientes\n9)Salir ");
 		FLUSH;
 		scanf("%d",&menuOptions);
 		switch(menuOptions)
@@ -84,6 +84,30 @@ int main(void)
 					if(flagAdd==1)
 					{
 						procesarResiduos(clientE,requestE,basurA,LENGTH,LENGTH2);
+					}
+					else
+					{
+						printf("\n Debe cargar un cliente antes\n");
+					}
+					FLUSH;
+					break;
+			//-------------------------------------------------------------------------//
+			case(6):
+					if(flagAdd==1)
+					{
+						imprimirClientesPendiente(clientE,requestE,basurA,LENGTH,LENGTH2);
+					}
+					else
+					{
+						printf("\n Debe cargar un cliente antes\n");
+					}
+					FLUSH;
+					break;
+			//-------------------------------------------------------------------------//
+			case(7):
+					if(flagAdd==1)
+					{
+						ImprimirBasuraProcesada(clientE,requestE,basurA,LENGTH,LENGTH2);
 					}
 					else
 					{

@@ -14,8 +14,12 @@
 #include "handyFunctions.h"
 #include "clientABM.h"
 #include "RequestABM.h"
+//funciones de print en procesarResiduos.c y pedidoDeRecoleccion.c (Porque se dio así cuando iba haciendo los puntos)
 
 
+
+int imprimirClientesPendiente(Client clientE[],Request requestE[],Trash basurA[],int length,int length2);
+int imprimirClientesProcesados(Client clientE[],Request requestE[],Trash basurA[],int length,int length2);
 
 
 #endif /* IMPRIMIRCLIENTESPENDIENTESPROCESADOS_H_ */
