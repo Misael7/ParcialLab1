@@ -19,14 +19,12 @@ int imprimirClientesPendiente(Client clientE[],Request requestE[],Trash basurA[]
 				printearClienteSeleccionado(clientE,i);
 				if(clientE[i].clientID==clientE[i+1].clientID)
 				{
-					printf("Entra primer if");
 					for(int j = i ; j < length ; j++)
 					{
-						printf("Entra segundo if");
 						printearPedidoSeleccionado(requestE,j);
 						if(clientE[j].clientID!=clientE[j+1].clientID)
 						{
-							printf("Entra if break");
+
 							break;
 						}
 					}
