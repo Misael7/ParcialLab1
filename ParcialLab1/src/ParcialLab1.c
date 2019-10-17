@@ -127,6 +127,20 @@ int main(void)
 					}
 					FLUSH;
 					break;
+			//-------------------------------------------------------------------------//
+			case(10):
+					if(flagAdd==1)
+					{
+						masPedidosPendientes(clientE,requestE,basurA,LENGTH,LENGTH2);
+						masPedidosProcesados(clientE,requestE,basurA,LENGTH,LENGTH2);
+						masPedidos(clientE,requestE,basurA,LENGTH,LENGTH2);
+					}
+					else
+					{
+						printf("\n Debe cargar un cliente para mostrarlo!!");
+					}
+					FLUSH;
+					break;
 
 
 		}
