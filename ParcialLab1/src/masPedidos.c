@@ -45,7 +45,7 @@ int masPedidosPendientes(Client clientE[],Request requestE[],Trash basurA,int le
 			}
 
 		}//for end
-	printf("\nEl cliente con más pedidos pendientes es: %s ID: %f \n",clientEpp.clientName,clientEpp.clientID);
+	printf("\nEl cliente con más pedidos pendientes es: %s ID: %d \n",clientEpp.clientName,clientEpp.clientID);
 	return 0;
 }
 
@@ -87,7 +87,7 @@ int masPedidosProcesados(Client clientE[],Request requestE[],Trash basurA,int le
 			}
 
 		}//for end
-	printf("\nEl cliente con más pedidos procesados es: %s ID: %f \n",clientEpp.clientName,clientEpp.clientID);
+	printf("\nEl cliente con más pedidos procesados es: %s ID: %d \n",clientEpp.clientName,clientEpp.clientID);
 	return 0;
 }
 
@@ -129,7 +129,7 @@ int masPedidos(Client clientE[],Request requestE[],Trash basurA,int length, int 
 			}
 
 		}//for end
-	printf("\nEl cliente con más pedidos es: %s ID: %f \n",clientEpp.clientName,clientEpp.clientID);
+	printf("\nEl cliente con más pedidos es: %s ID: %d \n",clientEpp.clientName,clientEpp.clientID);
 	return 0;
 }
 

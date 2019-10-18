@@ -8,7 +8,7 @@
 
 #include "funcionKilos.h"
 
-int masKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2)
+int masKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2)
 {
 	Client clientEpp;
 
@@ -26,11 +26,11 @@ int masKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length,
 				}//1
 			}
 		}//for end
-	printf("\nEl cliente con más kilos es: %s ID: %f \n",clientEpp.clientName,clientEpp.clientID);
+	printf("\nEl cliente con más kilos es: %s ID: %d \n",clientEpp.clientName,clientEpp.clientID);
 	return 0;
 }
 
-int menosKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2)
+int menosKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2)
 {
 	Client clientEpp;
 
@@ -48,11 +48,11 @@ int menosKilosCliente(Client clientE[],Request requestE[],Trash basurA,int lengt
 				}//1
 			}
 		}//for end
-	printf("\nEl cliente con menos kilos es: %s ID: %f \n",clientEpp.clientName,clientEpp.clientID);
+	printf("\nEl cliente con menos kilos es: %s ID: %d \n",clientEpp.clientName,clientEpp.clientID);
 	return 0;
 }
 
-int masMilKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2)
+int masMilKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2)
 {
 	Client clientEpp;
 	int contadorKilos=0;
@@ -71,11 +71,11 @@ int masMilKilosCliente(Client clientE[],Request requestE[],Trash basurA,int leng
 				}//1
 			}
 		}//for end
-	printf("\nMas de 1000 kilos %f \n",contadorKilos);
+	printf("\nMas de 1000 kilos %d \n",contadorKilos);
 	return 0;
 }
 
-int menosCienKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2)
+int menosCienKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2)
 {
 	Client clientEpp;
 	int contadorKilos=0;
@@ -94,6 +94,6 @@ int menosCienKilosCliente(Client clientE[],Request requestE[],Trash basurA,int l
 				}//1
 			}
 		}//for end
-	printf("\nMenos de 100 kilos %f \n",contadorKilos);
+	printf("\nMenos de 100 kilos %d \n",contadorKilos);
 	return 0;
 }

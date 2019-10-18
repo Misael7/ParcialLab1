@@ -16,10 +16,10 @@
 #include "clientABM.h"
 #include "RequestABM.h"
 
-int masKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2);
-int menosKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2);
-int masMilKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2);
-int menosCienKilosCliente(Client clientE[],Request requestE[],Trash basurA,int length, int length2);
+int masKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2);
+int menosKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2);
+int masMilKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2);
+int menosCienKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int length, int length2);
 
 
 #endif /* FUNCIONKILOS_H_ */

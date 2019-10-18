@@ -15,6 +15,7 @@
 #include "strCliente.h"
 #include "strPedidos.h"
 #include "strTrash.h"
+
 #define LENGTH 100
 #define LENGTH2 1000
 
@@ -31,14 +32,15 @@ int main(void)
 	////whilestart
 	do
 	{
-		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n5)Procesar residuos\n6)Print clientes y pedidos pendientes\n7)Mostrar pedidos procesados\n8)Mostrar Clientes\n9)Salir ");
+		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n5)Procesar residuos\n6)Print clientes y pedidos pendientes\n7)Mostrar pedidos procesados\n8)Mostrar Clientes\n9)Salir\n10)maspedidos\n11)maskilos\ ");
 		FLUSH;
 		scanf("%d",&menuOptions);
 		switch(menuOptions)
 		///start menu
 		{
 			case(1):
-					addClient(clientE, LENGTH);
+					/*addClient(clientE, LENGTH);*/
+					addClientHardcode(clientE,LENGTH);
 					flagAdd=1;
 					FLUSH;
 					break;
@@ -71,7 +73,8 @@ int main(void)
 			case(4):
 					if(flagAdd==1)
 					{
-						pedidoRecoleccion(clientE,requestE,LENGTH,LENGTH2);
+						addRequestHardcode(requestE,basurA,LENGTH);
+						/*pedidoRecoleccion(clientE,requestE,LENGTH,LENGTH2);*/
 					}
 					else
 					{
@@ -141,6 +144,22 @@ int main(void)
 					}
 					FLUSH;
 					break;
+					//-------------------------------------------------------------------------//
+					case(11):
+							if(flagAdd==1)
+							{
+								masKilosCliente(clientE,requestE,basurA,LENGTH,LENGTH2);
+								menosKilosCliente(clientE,requestE,basurA,LENGTH,LENGTH2);
+								masMilKilosCliente(clientE,requestE,basurA,LENGTH,LENGTH2);
+								menosCienKilosCliente(clientE,requestE,basurA,LENGTH,LENGTH2);
+							}
+							else
+							{
+								printf("\n Debe cargar un cliente para mostrarlo!!");
+							}
+							FLUSH;
+							break;
+
 
 
 		}

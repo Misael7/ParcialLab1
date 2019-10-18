@@ -9,6 +9,7 @@ C_SRCS += \
 ../src/clientABM.c \
 ../src/funcionKilos.c \
 ../src/handyFunctions.c \
+../src/harcodeos.c \
 ../src/imprimirClientesPendientesProcesados.c \
 ../src/masPedidos.c \
 ../src/pedidoDeRecoleccion.c \
@@ -20,6 +21,7 @@ OBJS += \
 ./src/clientABM.o \
 ./src/funcionKilos.o \
 ./src/handyFunctions.o \
+./src/harcodeos.o \
 ./src/imprimirClientesPendientesProcesados.o \
 ./src/masPedidos.o \
 ./src/pedidoDeRecoleccion.o \
@@ -31,6 +33,7 @@ C_DEPS += \
 ./src/clientABM.d \
 ./src/funcionKilos.d \
 ./src/handyFunctions.d \
+./src/harcodeos.d \
 ./src/imprimirClientesPendientesProcesados.d \
 ./src/masPedidos.d \
 ./src/pedidoDeRecoleccion.d \
