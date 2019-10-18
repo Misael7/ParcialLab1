@@ -19,7 +19,7 @@ int startRequest(Request requestE[],int length)
 	return 0;
 }
 
-int addRequest(Request requestE[], int length)
+int addRequest(Request requestE[], int length,int idCliente)
 {
 	for(int i = 0; i<length ; i++ )
 	{
@@ -33,6 +33,7 @@ int addRequest(Request requestE[], int length)
 			requestE[i].requestStatus=0;
 			requestE[i].isEmpty=0;
 			requestE[i].requestID=i;
+			requestE[i].idCliente = idCliente;
 
 			break;
 		}

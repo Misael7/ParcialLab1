@@ -11,7 +11,7 @@
 #include "strPedidos.h"
 #include "handyFunctions.h"
 
-int addRequest(Request requestE[], int length);
+int addRequest(Request requestE[], int length,int idCliente);
 int printRequest(Request requestE[], int length);
 
 #endif /* REQUESTABM_H_ */

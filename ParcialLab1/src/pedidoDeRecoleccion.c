@@ -6,16 +6,15 @@
  */
 #include "pedidoDeRecoleccion.h"
 
-int pedidoRecoleccion(Client clientE[],Request requestE[], int length, int length2)
+int pedidoRecoleccion(Client clientE[],Request requestE[], int length, int length2,int idCliente)
 {
-	int selectedID;
 	printClient(clientE,length);
 	printf("\nIntroduzca ID de cliente a cargar pedido\n");
-	getInt(&selectedID);
+	getInt(&idCliente);
 	printf("\nEl cliente seleccionado fue:\n");
-	printearClienteSeleccionado(clientE,selectedID);
+	printearClienteSeleccionado(clientE,idCliente);
 	printf("\n");
-	addRequest(requestE,length2);
+	addRequest(requestE,length2,idCliente);
 	printf("\n");
 	printRequest(requestE,length2);
 	return 0;
