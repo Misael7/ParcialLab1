@@ -12,17 +12,26 @@ int procesarResiduos(Client clientE[],Request requestE[],Trash basurA[], int len
 	printf("\nIntroduzca ID pedido\n");
 	getInt(&idRequest);
 	printearPedidoSeleccionado(requestE,idRequest);
+	int auxhdpe;
+	int auxldpe;
+	int auxpp;
+	int auxtotal;
 	do
 	{
 		printf("\nDetermine peso de hdpe\n");
 		getInt(&basurA[idRequest].hdpe);
+		auxhdpe=basurA[idRequest].hdpe;
 		printf("\nDetermine peso de ldpe\n");
 		getInt(&basurA[idRequest].ldpe);
+		auxldpe=basurA[idRequest].ldpe;
 		printf("\nDetermine peso de pp\n");
 		getInt(&basurA[idRequest].pp);
+		auxpp=basurA[idRequest].pp;
 		basurA[idRequest].idRequest=idRequest;
 		basurA[idRequest].isEmpty=0;
-	}while((basurA[idRequest].ldpe + basurA[idRequest].pp + basurA[idRequest].hdpe )<requestE[idRequest].totalWeight);
+		auxtotal = requestE[idRequest].totalWeight;
+
+	}while((auxhdpe + auxldpe + auxpp )>auxtotal);
 	printf("\nEstado de pedido completo\n");
 	requestE[idRequest].requestStatus=1;
 	return 0;

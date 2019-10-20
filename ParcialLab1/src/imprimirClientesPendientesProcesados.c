@@ -49,9 +49,9 @@ int ImprimirBasuraProcesada(Client clientE[],Request requestE[],Trash basurA[],i
 		{
 			if (requestE[i].requestStatus==1 && basurA[i].isEmpty==0)
 			{
-				printearClienteSeleccionado(clientE,i);
-				printearPedidoSeleccionado(requestE,i);
-				printearBasuraSeleccionada(basurA,i);
+				printearClienteSeleccionado(clientE,requestE[i].idClient);
+				printearPedidoSeleccionado(requestE,requestE[i].requestID);
+				printearBasuraSeleccionada(basurA,basurA[i].idRequest);
 			}
 
 		}
