@@ -19,7 +19,7 @@ int startRequest(Request requestE[],int length)
 	return 0;
 }
 
-int addRequest(Request requestE[], int length,int idCliente)
+int addRequest(Request requestE[], int length,int idClient)
 {
 	for(int i = 0; i<length ; i++ )
 	{
@@ -33,7 +33,7 @@ int addRequest(Request requestE[], int length,int idCliente)
 			requestE[i].requestStatus=0;
 			requestE[i].isEmpty=0;
 			requestE[i].requestID=i;
-			requestE[i].idCliente = idCliente;
+			requestE[i].idClient = idClient;
 
 			break;
 		}
@@ -49,6 +49,7 @@ int printRequest(Request requestE[], int length)
 		if(requestE[i].isEmpty==0)
 		{
 			printf("idPedido: %d \n", requestE[i].requestID);
+			printf("idClientPedido: %d \n", requestE[i].idClient);
 			printf("Estado pedido \n0 = pendiente\n1 = Completo:\n%d \n", requestE[i].requestStatus);
 			printf("Peso: %d \n", requestE[i].totalWeight);
 		}

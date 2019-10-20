@@ -39,8 +39,8 @@ int main(void)
 		///start menu
 		{
 			case(1):
-					/*addClient(clientE, LENGTH);*/
-					addClientHardcode(clientE,LENGTH);
+					addClient(clientE, LENGTH);
+					/*addClientHardcode(clientE,LENGTH);*/
 					flagAdd=1;
 					FLUSH;
 					break;
@@ -73,8 +73,8 @@ int main(void)
 			case(4):
 					if(flagAdd==1)
 					{
-						addRequestHardcode(requestE,basurA,LENGTH);
-						/*pedidoRecoleccion(clientE,requestE,LENGTH,LENGTH2);*/
+						/*addRequestHardcode(requestE,basurA,LENGTH);*/
+						pedidoRecoleccion(clientE,requestE,LENGTH,LENGTH2);
 					}
 					else
 					{

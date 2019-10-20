@@ -14,7 +14,7 @@ typedef struct {
 	int totalWeight;
 	int requestStatus; //0 for pending 1 for complete
 	int isEmpty;
-    int idCliente;
+    int idClient;
 } Request;
 
 #endif /* STRPEDIDOS_H_ */

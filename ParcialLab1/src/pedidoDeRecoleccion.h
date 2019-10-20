@@ -14,6 +14,6 @@
 #include "clientABM.h"
 #include "RequestABM.h"
 
-int pedidoRecoleccion(Client clientE[],Request requestE[], int length, int length2);
+int pedidoRecoleccion(Client clientE[],Request requestE[], int length, int length2,int idClient);
 int printearClienteSeleccionado(Client clientE[], int length);
 #endif /* PEDIDODERECOLECCION_H_ */

@@ -14,6 +14,7 @@ typedef struct {
 	int ldpe;
 	int pp;
 	int isEmpty;
+	int idRequest;
 } Trash;
 
 

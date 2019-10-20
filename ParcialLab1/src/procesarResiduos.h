@@ -16,7 +16,7 @@
 #include "RequestABM.h"
 #include "strTrash.h"
 
-int procesarResiduos(Client clientE[],Request requestE[],Trash basurA[], int length, int length2);
+int procesarResiduos(Client clientE[],Request requestE[],Trash basurA[], int length, int length2,int idRequest);
 int printearPedidoSeleccionado(Request requestE[], int length);
 int printearBasuraSeleccionada(Trash basurA[], int length);
 
