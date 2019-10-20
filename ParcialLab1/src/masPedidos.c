@@ -92,28 +92,24 @@ int masPedidos(Client clientE[],Request requestE[],Trash basurA,int length, int 
 
 	for(int i = 0; i<length ; i++ )
 		{
-			if (requestE[i].isEmpty==0)//acepta sin importar estado
+			if (requestE[i].isEmpty==0)
 			{
 				if(clientE[i].isEmpty==0 )
-						{//1
-							pedidosSumaInit++;
-							if(flag==0)
-							{
-								clientEpp=clientE[i];
-								flag = 1;
-							}
-							if(requestE[i].idClient ==/* clientE[i].clientID*/requestE[i+1].idClient)
-							{//2
-								clientEpp=clientE[requestE[i].idClient];
-							}//2
-							else
-							{//else
-								if(requestE[i].idClient != /*clientE[i].clientID*/ requestE[i+1].idClient)
-								{
-									pedidosSumaInit=0;
-								}
-							}//else
-						}//1
+				{//1
+					if(flag==0)
+					{
+						clientEpp=clientE[i];
+						flag = 1;
+					}
+					if(clientE[i].clientID == requestE[i].idClient)
+					{
+						pedidosSumaInit++;
+						if(pedidosSumaInit > auxmasPedidos)
+						{
+							clientEpp=clientE[requestE[i].idClient];
+						}
+					}
+				}//1
 			}
 
 		}//for end
