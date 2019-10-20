@@ -33,8 +33,8 @@ int imprimirClientesProcesados(Client clientE[],Request requestE[],Trash basurA[
 	{
 		if (requestE[i].requestStatus==1 && clientE[i].isEmpty==0)
 		{
-			printearClienteSeleccionado(clientE,i);
-			printearPedidoSeleccionado(requestE,i);
+			printearClienteSeleccionado(clientE,requestE[i].idClient);
+			printearPedidoSeleccionado(requestE,requestE[i].requestID);
 		}
 
 	}
