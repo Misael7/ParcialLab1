@@ -86,19 +86,14 @@ int menosCienKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int
 {
 	Client clientEpp;
 	int contadorKilos=0;
-	length=100;
 	for(int i = 0; i<length ; i++ )
 		{
 			if(requestE[i].isEmpty==0)
 			{
-				if(clientE[i].isEmpty==0 )
-				{//1
 					if(requestE[i].totalWeight <=100)
 					{//2
 						contadorKilos++;
 					}//2
-
-				}//1
 			}
 		}//for end
 	printf("\nMenos de 100 kilos %d \n",contadorKilos);
