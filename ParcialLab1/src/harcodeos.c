@@ -108,7 +108,32 @@ int addRequestHardcode(Request requestE[],Trash basurA[], int length)
 	requestE[6].requestStatus=1;
 	requestE[6].totalWeight=750;
 	requestE[6].idClient=4;
+	basurA[6].hdpe=100;
+	basurA[6].ldpe=50;
+	basurA[6].pp=60;
+	basurA[6].idRequest=6;
 
+	requestE[7].isEmpty=0;
+	requestE[7].requestID=7;
+	requestE[7].requestStatus=0;
+	requestE[7].totalWeight=200;
+	requestE[7].idClient=1;
+
+	requestE[8].isEmpty=0;
+	requestE[8].requestID=8;
+	requestE[8].requestStatus=1;
+	requestE[8].totalWeight=30;
+	requestE[8].idClient=5;
+	basurA[8].hdpe=10;
+	basurA[8].ldpe=5;
+	basurA[8].pp=3;
+	basurA[8].idRequest=8;
+
+	requestE[9].isEmpty=0;
+	requestE[9].requestID=9;
+	requestE[9].requestStatus=0;
+	requestE[9].totalWeight=456;
+	requestE[9].idClient=6;
 
 
 

@@ -109,7 +109,7 @@ int masPedidos(Client clientE[],Request requestE[],Trash basurA,int length, int 
 							}//2
 							else
 							{//else
-								if(requestE[i].idClient != clientE[i].clientID)
+								if(requestE[i].idClient != /*clientE[i].clientID*/ requestE[i+1].idClient)
 								{
 									pedidosSumaInit=0;
 								}
