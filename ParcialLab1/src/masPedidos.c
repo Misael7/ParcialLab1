@@ -30,7 +30,6 @@ int masPedidosPendientes(Client clientE[],Request requestE[],Trash basurA,int le
 					if(requestE[i].idClient == requestE[i+1].idClient)
 					{//2
 						clientEpp=clientE[requestE[i].idClient];
-						printf("Concha tuya");
 					}//2
 					else
 					{//else

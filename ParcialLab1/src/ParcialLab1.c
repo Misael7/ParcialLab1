@@ -15,6 +15,9 @@
 #include "strCliente.h"
 #include "strPedidos.h"
 #include "strTrash.h"
+//
+
+//
 
 #define LENGTH 100
 #define LENGTH2 1000
