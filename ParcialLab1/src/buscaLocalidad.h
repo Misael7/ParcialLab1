@@ -15,5 +15,12 @@
 #include "clientABM.h"
 #include "RequestABM.h"
 
+/**
+*\brief	 Busca pedidos en estado pendiente según localidad ingresada
+*\param	 Estructuras y sus tamaños
+*\return 0 si es exitosa
+*
+*/
+
 int buscaLocalidadPedidosPendientes(Client clientE[],Request requestE[],Trash basurA[],int length, int length2);
 #endif /* BUSCALOCALIDAD_H_ */

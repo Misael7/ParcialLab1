@@ -7,6 +7,12 @@
  Description : Hello World in C, Ansi-style
  ============================================================================
  */
+/**
+*\brief	Despliega un menu de opciones a realizar
+*\param	Null
+*\return int exit
+*
+*/
 
 #include <stdio.h>
 #include <stdlib.h>

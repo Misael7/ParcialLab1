@@ -15,6 +15,13 @@
 #include "clientABM.h"
 #include "RequestABM.h"
 
+/**
+*\brief Obtiene un Cuit, busca un Client y los pedidos relacionados y da opciones de reciclado
+*\param	 Estructuras y tamaños
+*\return 0 si es exitosa
+*
+*/
+
 int buscaCuitReciclado(Client clientE[],Request requestE[],Trash basurA[],int length, int length2);
 
 #endif /* BUSCACUITRECICLO_H_ */
