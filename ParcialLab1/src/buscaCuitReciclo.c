@@ -13,12 +13,13 @@ int buscaCuitReciclado(Client clientE[],Request requestE[],Trash basurA[],int le
 	int auxClientID;
 	int opcionBasura;
 	printf("\n Ingrese Cuit a hallar \n");
-	getInt(&auxCuit);
+	/*getInt(&auxCuit);*/
+	scanf("%d",&auxCuit);
 	printf("Cuit ingresado %d\n",auxCuit);
 	FLUSH;
 	for(int i = 0; i < length ; i++)
 	{
-		if(clientE[i].clientCuit<=auxCuit)
+		if(clientE[i].clientCuit=auxCuit)
 		{
 			auxClientID=clientE[i].clientID;
 			for(int j=0;j<length;j++)
