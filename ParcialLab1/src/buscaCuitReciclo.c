@@ -19,7 +19,7 @@ int buscaCuitReciclado(Client clientE[],Request requestE[],Trash basurA[],int le
 	FLUSH;
 	for(int i = 0; i < length ; i++)
 	{
-		if(clientE[i].clientCuit=auxCuit)
+		if(clientE[i].clientCuit==auxCuit)
 		{
 			auxClientID=clientE[i].clientID;
 			for(int j=0;j<length;j++)
