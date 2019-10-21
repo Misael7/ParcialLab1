@@ -19,8 +19,6 @@ int masPedidosPendientes(Client clientE[],Request requestE[],Trash basurA,int le
 
 			if (requestE[i].requestStatus==0 && requestE[i].isEmpty==0)
 			{
-				if(clientE[i].isEmpty==0 )
-				{//1
 					pedidosSumaInit++;
 					if(flag==0)
 					{
@@ -38,7 +36,7 @@ int masPedidosPendientes(Client clientE[],Request requestE[],Trash basurA,int le
 							pedidosSumaInit=0;
 						}
 					}//else
-				}//1
+
 			}
 		}//for end
 	printf("\nEl cliente con más pedidos pendientes es: %s  \n",clientEpp.clientName);
@@ -58,24 +56,30 @@ int masPedidosProcesados(Client clientE[],Request requestE[],Trash basurA,int le
 			{
 				if(clientE[i].isEmpty==0 )
 				{//1
-					pedidosSumaInit++;
-					if(flag==0)
-					{
-						clientEpp=clientE[i];
-						flag = 1;
-					}
-					if(requestE[i].idClient == /*clientE[i].clientID*/requestE[i+1].idClient)
-					{//2
-						clientEpp=clientE[requestE[i].idClient];
-					}//2
-					else
-					{//else
-						if(requestE[i].idClient != clientE[i].clientID)
+					{//1
+						if(flag==0)
 						{
-							pedidosSumaInit=0;
+							clientEpp=clientE[i];
+							flag = 1;
 						}
-					}//else
-				}//1
+						//for
+						for(int j=0 ; j < length ; j++)
+						{
+							if(clientE[i].clientID == requestE[j].idClient)
+							{
+							pedidosSumaInit++;
+								if(pedidosSumaInit > auxmasPedidos)
+								{
+									auxmasPedidos=pedidosSumaInit;
+									clientEpp=clientE[i];
+								}
+							}
+						}
+						pedidosSumaInit=0;
+						//for
+
+					}//1
+			}
 			}
 		}//for end
 	printf("\nEl cliente con más pedidos procesados es: %s \n",clientEpp.clientName);
