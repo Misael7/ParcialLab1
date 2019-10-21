@@ -26,7 +26,7 @@ int ppReciclado(Client clientE[],Request requestE[],Trash basurA[],int length, i
 
 	}
 	promedioPP=sumaAuxPP/cuentaClientesPP;
-	printf("Promedio PP reciclado %d ",promedioPP);
+	printf("Promedio PP reciclado %d\n ",promedioPP);
 
 	return 0;
 }

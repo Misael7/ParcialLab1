@@ -6,6 +6,7 @@
 C_SRCS += \
 ../src/ParcialLab1.c \
 ../src/RequestABM.c \
+../src/buscaCuitReciclo.c \
 ../src/buscaLocalidad.c \
 ../src/clientABM.c \
 ../src/funcionKilos.c \
@@ -21,6 +22,7 @@ C_SRCS += \
 OBJS += \
 ./src/ParcialLab1.o \
 ./src/RequestABM.o \
+./src/buscaCuitReciclo.o \
 ./src/buscaLocalidad.o \
 ./src/clientABM.o \
 ./src/funcionKilos.o \
@@ -36,6 +38,7 @@ OBJS += \
 C_DEPS += \
 ./src/ParcialLab1.d \
 ./src/RequestABM.d \
+./src/buscaCuitReciclo.d \
 ./src/buscaLocalidad.d \
 ./src/clientABM.d \
 ./src/funcionKilos.d \
