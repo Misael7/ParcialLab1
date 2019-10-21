@@ -13,6 +13,7 @@ C_SRCS += \
 ../src/imprimirClientesPendientesProcesados.c \
 ../src/masPedidos.c \
 ../src/pedidoDeRecoleccion.c \
+../src/porcentajeCompletado.c \
 ../src/procesarResiduos.c 
 
 OBJS += \
@@ -25,6 +26,7 @@ OBJS += \
 ./src/imprimirClientesPendientesProcesados.o \
 ./src/masPedidos.o \
 ./src/pedidoDeRecoleccion.o \
+./src/porcentajeCompletado.o \
 ./src/procesarResiduos.o 
 
 C_DEPS += \
@@ -37,6 +39,7 @@ C_DEPS += \
 ./src/imprimirClientesPendientesProcesados.d \
 ./src/masPedidos.d \
 ./src/pedidoDeRecoleccion.d \
+./src/porcentajeCompletado.d \
 ./src/procesarResiduos.d 
 
 
