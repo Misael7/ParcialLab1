@@ -25,7 +25,6 @@ int buscaLocalidadPedidosPendientes(Client clientE[],Request requestE[],Trash ba
 			{
 				if(requestE[j].idClient==auxClientID && requestE[j].requestStatus==0)
 				{
-					printf("%d\n",cuentaPedidosPendientes);
 					cuentaPedidosPendientes++;
 				}
 			}

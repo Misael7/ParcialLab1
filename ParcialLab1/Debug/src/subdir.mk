@@ -15,6 +15,7 @@ C_SRCS += \
 ../src/masPedidos.c \
 ../src/pedidoDeRecoleccion.c \
 ../src/porcentajeCompletado.c \
+../src/ppReciclado.c \
 ../src/procesarResiduos.c 
 
 OBJS += \
@@ -29,6 +30,7 @@ OBJS += \
 ./src/masPedidos.o \
 ./src/pedidoDeRecoleccion.o \
 ./src/porcentajeCompletado.o \
+./src/ppReciclado.o \
 ./src/procesarResiduos.o 
 
 C_DEPS += \
@@ -43,6 +45,7 @@ C_DEPS += \
 ./src/masPedidos.d \
 ./src/pedidoDeRecoleccion.d \
 ./src/porcentajeCompletado.d \
+./src/ppReciclado.d \
 ./src/procesarResiduos.d 
 
 

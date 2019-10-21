@@ -35,7 +35,7 @@ int main(void)
 	////whilestart
 	do
 	{
-		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n5)Procesar residuos\n6)Print clientes y pedidos pendientes\n7)Mostrar pedidos procesados\n8)Mostrar Clientes\n9)Salir\n10)maspedidos\n11)maskilos\n12)Porcentajes\n13)BuscaLoc\n ");
+		printf("\nIngrese una opcion para operar:\n1)Alta Cliente\n2)Modificar Cliente\n3)Baja Cliente\n4)Crear pedido de recoleccion\n5)Procesar residuos\n6)Print clientes y pedidos pendientes\n7)Mostrar pedidos procesados\n8)Mostrar Clientes\n9)Salir\n10)maspedidos\n11)maskilos\n12)Porcentajes\n13)BuscaLoc\n14)PPreciclado\n ");
 		FLUSH;
 		scanf("%d",&menuOptions);
 		switch(menuOptions)
@@ -174,7 +174,7 @@ int main(void)
 					 }
 				     FLUSH;
 					 break;
-			 //-------------------------------------------------------------------------//
+			//-------------------------------------------------------------------------//
 			case(13):
 					 					 if(flagAdd==1)
 					 					 {
@@ -186,6 +186,18 @@ int main(void)
 					 					 }
 					 				     FLUSH;
 					 					 break;
+			//-------------------------------------------------------------------------//
+			case(14):
+					if(flagAdd==1)
+					{
+						ppReciclado(clientE,requestE,basurA,LENGTH,LENGTH2);
+					}
+					else
+					{
+						printf("\n Debe cargar un cliente para mostrarlo!!");
+					}
+					FLUSH;
+					break;
 
 		}
 		///end menu
