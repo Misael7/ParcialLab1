@@ -49,6 +49,6 @@ int printearBasuraSeleccionada(Trash basurA[], int length)
 {
 	printf("HDPE: %d \n", basurA[length].hdpe);
 	printf("LDPE: %d \n", basurA[length].ldpe);
-	printf("LDPE: %d \n", basurA[length].pp);
+	printf("PP: %d \n", basurA[length].pp);
 	return 0;
 }
