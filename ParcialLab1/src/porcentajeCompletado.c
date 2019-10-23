@@ -25,7 +25,7 @@ int porcentajeClientesProcesados(Client clientE[],Request requestE[],Trash basur
 			total	= requestE[i].totalWeight;
 			porcentaje = ((auxHdpe + auxLdpe + auxPp)*100)/total;
 
-			printf("ID Pedido: %d \n Cuit Cliente: %d \n Porcentaje reciclado: %d \n ", requestE[i].requestID, clientE[requestE[i].idClient].clientCuit,porcentaje);
+			printf("ID Pedido: %d \n Cuit Cliente: %d \n Porcentaje reciclado: %d % \n ", requestE[i].requestID, clientE[requestE[i].idClient].clientCuit,porcentaje);
 
 		}
 	}

@@ -26,20 +26,17 @@ int buscaCuitReciclado(Client clientE[],Request requestE[],Trash basurA[],int le
 			auxClientID=clientE[i].clientID;
 			if(requestE[i].idClient==auxClientID && requestE[i].requestStatus==1)
 			{
-				printf("Seguimiento de la basura primero %d\n",auxHDPE);
+				//usado para pruebas
 			}
 			for(int j=0;j<length;j++)
 			{
 				if(requestE[j].idClient==auxClientID && requestE[j].requestStatus==1)
 				{
-					printf("Seguimiento de la basura segundo %d\n",auxHDPE);
 					auxHDPE = auxHDPE + basurA[j].hdpe;
 					auxLDPE = auxLDPE + basurA[j].ldpe;
 					auxPP = auxPP + basurA[j].pp;
 				}
 			}
-			printf("Seguimiento de la basura tercero %d\n",auxHDPE);
-
 		}
 
 	}
