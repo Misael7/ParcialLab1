@@ -43,27 +43,26 @@ int buscaCuitReciclado(Client clientE[],Request requestE[],Trash basurA[],int le
 		}
 
 	}
-	printf("\nIngrese tipo de basura reciclada a informar 1 = HDPE 2=LDPE 3=PP 9=SALIR\n");
-
-						do{
-						scanf("%d",&opcionBasura);
-						FLUSH;
-						switch(opcionBasura)
-						{
-						case(1):
-								printf("Cantidad de HDPE: %d\n",auxHDPE);
-								FLUSH;
-								break;
-						case(2):
-								printf("Cantidad de LDPE: %d\n",auxLDPE);
-								FLUSH;
-								break;
-						case(3):
-								printf("Cantidad de PP: %d\n",auxPP);
-								FLUSH;
-								break;
-						}
-						}while(opcionBasura!=9);
+	do{
+		printf("\nIngrese tipo de basura reciclada a informar 1 = HDPE 2=LDPE 3=PP 9=SALIR\n");
+		scanf("%d",&opcionBasura);
+		FLUSH;
+		switch(opcionBasura)
+		{
+			case(1):
+			printf("Cantidad de HDPE: %d\n",auxHDPE);
+			FLUSH;
+			break;
+			case(2):
+			printf("Cantidad de LDPE: %d\n",auxLDPE);
+			FLUSH;
+			break;
+			case(3):
+			printf("Cantidad de PP: %d\n",auxPP);
+			FLUSH;
+			break;
+		}
+	}while(opcionBasura!=9);
 	return 0;
 }
 
