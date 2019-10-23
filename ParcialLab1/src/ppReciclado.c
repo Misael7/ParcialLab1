@@ -17,7 +17,7 @@ int ppReciclado(Client clientE[],Request requestE[],Trash basurA[],int length, i
 
 	for (int i = 0; i<length;i++)
 	{
-		if(requestE[i].requestStatus==1)
+		if(requestE[i].requestStatus==1 && /*Linea agregada para ignorar pedidos same clientID*/clientE[i].clientID!=clientE[i+1].clientID)
 		{
 			auxPP=basurA[i].pp;
 			sumaAuxPP=sumaAuxPP+auxPP;
