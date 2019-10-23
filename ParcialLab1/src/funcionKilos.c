@@ -66,11 +66,11 @@ int masMilKilosCliente(Client clientE[],Request requestE[],Trash basurA[],int le
 
 	for(int i = 0; i<length ; i++ )
 		{
-			if(requestE[i].isEmpty==0)
+			if(requestE[i].isEmpty==0 && requestE[i].requestStatus==1)
 			{
 				if(clientE[i].isEmpty==0 )
 				{//1
-					if(requestE[i].totalWeight >=1000)
+					/*if(requestE[i].totalWeight >=1000)*/if((basurA[i].hdpe+basurA[i].ldpe+basurA[i].pp) >1000)
 					{//2
 						contadorKilos++;
 					}//2

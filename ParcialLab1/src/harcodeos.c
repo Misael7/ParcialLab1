@@ -110,7 +110,7 @@ int addRequestHardcode(Request requestE[],Trash basurA[], int length)
 	requestE[6].idClient=4;
 	basurA[6].hdpe=100;
 	basurA[6].ldpe=50;
-	basurA[6].pp=60;
+	basurA[6].pp=70;
 	basurA[6].idRequest=6;
 
 	requestE[7].isEmpty=0;
